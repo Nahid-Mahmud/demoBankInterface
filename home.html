@@ -6,13 +6,14 @@
     <title>Bank Home</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
-    rel="stylesheet"
-    type="text/css"
-  />
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- header section -->
     <header>
       <div class="text-center mt-10 md:mt-20 gap-2 md:gap-5 flex flex-col">
         <h1 class="text-2xl md:text-3xl font-semibold capitalize">
@@ -23,5 +24,61 @@
         </p>
       </div>
     </header>
+    <!-- main seciton  -->
+    <main class="max-w-[70vw] mx-auto">
+      <section
+        class="flex flex-col lg:flex-row items-center justify-center lg:gap-28 gap-10 md:mt-10 mt-5"
+      >
+        <div class="w-64 rounded p-5 h-28 bg-green-900">
+          <p class="text-3xl">Deposit</p>
+          <p class="text-3xl"><span id="deposit">0</span>$</p>
+        </div>
+        <div class="w-64 rounded p-5 h-28 bg-warning">
+          <p class="text-3xl">Withdraw</p>
+          <p class="text-3xl"><span id="withdraw">0</span>$</p>
+        </div>
+        <div class="w-64 rounded p-5 h-28 bg-sky-950">
+          <p class="text-3xl">Balance</p>
+          <p class="text-3xl"><span id="balance">1250</span>$</p>
+        </div>
+      </section>
+      <!-- Input area -->
+      <section class="flex flex-col lg:flex-row max-w-[90vw] mx-auto">
+        <!-- deposit -->
+        <div
+          class="bg-white text-black min-h-12 p-10 lg:w-1/3 md:max-w[50vw] mx-auto max-w-[90vw] md:mt-20 mt-10 flex rounded flex-col gap-4"
+        >
+          <h2 class="text-3xl mt-6 capitalize">Please Enter deposit amount</h2>
+          <input
+            class="text-xl h-16 rounded-md px-6 bg-slate-200 max-w-52"
+            placeholder="Enter Amount"
+            type="number"
+            name=""
+            id="input-deposit"
+          />
+          <button id="submit-deposit-btn" class="btn bg-green-800 text-lg w-fit">Deposit</button>
+        </div>
+        <!-- withdraw -->
+        <div
+          class="bg-white text-black min-h-12 p-10 lg:w-1/3 md:max-w[50vw] mx-auto max-w-[90vw] md:mt-20 mt-10 flex rounded flex-col gap-4"
+        >
+          <h2 class="text-3xl mt-6">Please Entter Withdraw Amount</h2>
+          <input
+            class="text-xl h-16 rounded-md px-6 bg-slate-200 max-w-52"
+            placeholder="Enter Amount"
+            type="number"
+            name=""
+            id="input-withdraw"
+          />
+          <button id="submit-withdraw-btn" class="btn bg-[#8c1e1e] text-lg w-fit">withdraw</button>
+        </div>
+      </section>
+      <!-- clear btn  -->
+      <section class="text-center">
+        <button id="clear-btn" class="bg-[#e24056] text-black text-2xl rounded-lg mt-8 w-28 font-bold h-14 " title="Clear all accounts balance">Clear</button>
+      </section>
+    </main>
+
+    <script src="./js/home.js"></script>
   </body>
 </html>
