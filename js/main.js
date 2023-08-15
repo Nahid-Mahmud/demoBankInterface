@@ -9,6 +9,6 @@ document.querySelector("#submit-btn").addEventListener("click", function () {
   if (email === "admin" && password === "password") {
     window.location.href = "./home.html";
   } else {
-    console.log("Not a valid Account");
+    alert("Invalid Email Or Password!!")
   }
 });
