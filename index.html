@@ -1,15 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="synthwave">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Bank Interface</title>
+    <!-- CDN section  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fornt section   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom css Section  -->
+    <style>
+      * {
+        font-family: "Courgette", cursive;
+      }
+    </style>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <!-- header Section  -->
+    <header>
+      <div class="text-center mt-10 md:mt-20 gap-2 md:gap-5 flex flex-col">
+        <h1 class="text-2xl md:text-3xl font-semibold capitalize">
+          Welcome to the imaginary bank system.
+        </h1>
+        <p class="text-xl md:text-2xl font-medium capitalize">
+          create unlimited money from your thoughts.
+        </p>
+      </div>
+    </header>
+
+    <!-- main section  -->
+    <main>
+      <section class="lg:mt-32 md:mt-14 mt-8">
+        <div
+          class="flex flex-col bg-blue-400 lg:w-1/2 max-w-[90vw] mx-auto gap-4 p-8 lg:p-0 rounded-lg lg:min-h-[40vh] lg:justify-center lg:items-center"
+        >
+          <h2 class="text-2xl md:text-3xl font-medium capitalize">
+            Please Login
+          </h2>
+          <div class="h-[.3rem] w-1/4 bg-white"></div>
+          <div class="flex flex-col gap-5 lg:w-1/2 mt-4">
+            <input
+              class="text-white text-xl p-4 rounded h-14"
+              placeholder="Input Your Email"
+              type="text"
+              name=""
+              id="email"
+            />
+            <input
+              class="text-white text-xl p-4 rounded h-14"
+              placeholder="Input Your password"
+              type="password"
+              name=""
+              id="password"
+            />
+          </div>
+          <button
+            id="submit-btn"
+            class="transition ease-in-out delay-150 bg-[#2f1f62] hover:bg-[#094f1c] px-5 py-2 rounded-xl text-2xl md:text-2xl font-medium capitalize"
+          >
+            Login
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer></footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
