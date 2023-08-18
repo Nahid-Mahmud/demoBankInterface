@@ -1,3 +1,3 @@
 # demoBankInterface
-default mail : admin
+default mail : admin <br>
 default pass: password
